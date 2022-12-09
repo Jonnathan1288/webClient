@@ -1,0 +1,26 @@
+<!--<p>directiva works!</p>-->
+<button type="button" (click)="setHabilitar()" class="btn btn-primary my-3">Oculta</button>
+
+<div class="card">
+    <div class="card-header">
+        Listado de cursos
+    </div>
+    <ul class="list-group" *ngIf="habilitar == true">
+        <li class="list-group-item"><h5>TypesScript</h5></li>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let lenguaje of listaTemasTS">{{lenguaje}}</li>
+        </ul>
+
+        <li class="list-group-item"><h5>JavaScript</h5></li>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let lenguaje of listaTemasJS">{{lenguaje}}</li>
+        </ul>
+
+        <li class="list-group-item"><h5>C#</h5></li>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let lenguaje of listaLTemasC">{{lenguaje}}</li>
+        </ul>
+        
+    </ul>
+</div>
+

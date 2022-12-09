@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap; 
+}
+
+.contenido-title{
+    text-align: center;
+    color: blue;
+    font-size: 23px;
+}
