@@ -26,7 +26,7 @@ export class ClienteService {
   getac$() {
     return this.readonly$;
   }
-  private urlEndPoint: string = 'http://localhost:8080/api/clientes';
+  private urlEndPoint: string = 'https://aapruebas-production.up.railway.app/api/clientes';
 
   private httpHeaders = new HttpHeaders({ 'Content-Type': 'application/json' })
   constructor(private http: HttpClient) { }
